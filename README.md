@@ -105,15 +105,15 @@ By the end of this lesson you should be able to:
 ## Ranges
 * very much like ruby ranges
 
-    # inclusive range assignment
-    range = [1..6] => [1,2,3,4,5,6]
+    	# inclusive range assignment
+    	range = [1..6] => [1,2,3,4,5,6]
 
-    # non-inclusive range assignment
-    range = [1...6] => [1,2,3,4,5]
+    	# non-inclusive range assignment
+    	range = [1...6] => [1,2,3,4,5]
 
-    # can get subsets of an array
-    range[1..3] => [2,3,4]
-    range[0..2] => [1,2,3]
+    	# can get subsets of an array
+    	range[1..3] => [2,3,4]
+    	range[0..2] => [1,2,3]
 
 ## Conditionals
 
@@ -269,4 +269,5 @@ By the end of this lesson you should be able to:
 			when 1 then "One out, play ball."
 			when 2 then "Two outs, play ball."
 			else "The side is retired!"
+
 
