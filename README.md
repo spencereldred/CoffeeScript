@@ -69,7 +69,7 @@ By the end of this lesson you should be able to:
 	# Rails does it automatically!
 
 	$ compiles name.coffee to name.js everytime name.coffee is changed
-	$ coffee -cw name.coffee
+	$ coffee -bcw name.coffee
 
 
 ## Functions, List Comprehensions, Conditionals (30 min):
@@ -251,7 +251,7 @@ By the end of this lesson you should be able to:
 
 ## Exercise 3: (30 min)
 
-* Redo Haters Lab - rewrite the JS in CS. 
+* Redo Haters Lab - rewrite the JS in CS.
 * https://gist.github.com/DelmerGA/7a90af280d0a393f668d
 * If you don't want to use your previous lab, Rafi's Hater's Lab solution is in the repo: "index.html" and "lab.js".
 * Create a haters.coffee file that compiles into haters.js.
