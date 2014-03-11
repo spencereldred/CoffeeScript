@@ -12,6 +12,8 @@
 		* http://js2coffee.org/
 	* The Little Book on Coffee
 		* http://arcturo.github.io/library/coffeescript/index.html
+	* WikiPedia - included in rails since 3.1
+		* http://en.wikipedia.org/wiki/CoffeeScript
 
 ## Student Learning Objectives
 
@@ -211,9 +213,10 @@ By the end of this lesson you should be able to:
 
 ## Exercise 1 (15 min):
 
-* Write a function that takes an array of numbers and prints to the console numbers divisible by 3
+* Write a function that takes an array of numbers and prints to the console numbers divisible by 7
 * Use a range to create an array of numbers from 1 to 100
-* Loop through the array with a list comprehension use a filter to select the numbers divisible by 3
+* Loop through the array with a list comprehension use a filter to select the numbers divisible by 7
+* write the CoffeeScript. compile it. copy the compiled JavaScript into the console to run it.
 
 ## Objects, Existence: (15 min)
 
@@ -248,11 +251,11 @@ By the end of this lesson you should be able to:
 
 ## Exercise 3: (30 min)
 
-* Redo Haters Lab
+* Redo Haters Lab - rewrite the JS in CS. 
 * https://gist.github.com/DelmerGA/7a90af280d0a393f668d
-* If you don't want to use your previous lab, Rafi's Hater's Lab solution is in the repo: "index.html".
-* put your code in a haters.coffee file that compiles into haters.js
-* include the compiled file, haters.js, in your html page
+* If you don't want to use your previous lab, Rafi's Hater's Lab solution is in the repo: "index.html" and "lab.js".
+* Create a haters.coffee file that compiles into haters.js.
+* include the compiled file, haters.js, in your html page.
 
 
 ## Lab Assignment:
