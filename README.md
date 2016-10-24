@@ -7,13 +7,13 @@
 * Works well with AngularJS. Used together, front end programming feel like Ruby on Rails.
 * Very well documented.
 	* Documentation and CoffeeScript to JavaScript converter:
-		* http://jashkenas.github.io/coffee-script/
+		* http://coffeescript.org/
 	* JavaScript to CoffeeScript converter:
-		* http://js2coffee.org/
+		* http://js2.coffee/
 	* The Little Book on Coffee
 		* http://arcturo.github.io/library/coffeescript/index.html
-	* WikiPedia - included in rails since 3.1
-		* http://en.wikipedia.org/wiki/CoffeeScript
+	* Wikipedia - included in rails since 3.1
+		* https://en.wikipedia.org/wiki/CoffeeScript
 
 ## Student Learning Objectives
 
@@ -30,20 +30,20 @@ By the end of this lesson you should be able to:
 
 	# test for node:
 	$ node -v
-	v0.10.25
+	v4.x.x
 
 	# test for npm:
 	$ npm -v
-	1.3.24
+	3.x.x
 
-	# get node and npm from: http://nodejs.org
+	# get node and npm from: https://nodejs.org/
 
 	# If node and npm are installed, install CoffeeScript
 	$ sudo npm install -g coffee-script
 
 	# test installation
 	$ coffee -v
-	=> CoffeeScript version 1.7.1
+	=> CoffeeScript version 1.11.1
 
 
 ## Summary of Features / Quirks
@@ -55,9 +55,9 @@ By the end of this lesson you should be able to:
 	* improper indentation is the source of lots of problems
 * Parenthesis are not required:
 	* CoffeeScript convention is to use parenthesis on everything except the outermost one
-* Parenthesis are required to run a function: function_name( )
+* Parenthesis are required to run a function with no parameters: function_name()
 * CoffeeScript supports string interpolation
-* Comments use hashtag #. CoffeeScript comments do not compile into the .js file.
+* Comments use hash #. CoffeeScript comments do not compile into the .js file.
 * @ === this, example:  @name === this.name
 * CoffeeScript implicitly returns the last statement, JavaScript implicitly returns undefined
 * CoffeeScript was created by Jeremy Ashkenas, who also created Backbone.js and Underscore.js.
@@ -75,7 +75,7 @@ By the end of this lesson you should be able to:
 ## Functions, List Comprehensions, Conditionals (30 min):
 ## Functions
 * Functions are declared with the "Skinny Arrow": ->
-	* "->" converts to "function(){ }"
+	* "->" converts to "function() { }"
 	* functions use "Fat Arrow" => to bind the current value of "this"
 * All CoffeeScript functions have a return value
 	* like Ruby there is an implicit return of the last line in your function
@@ -83,12 +83,12 @@ By the end of this lesson you should be able to:
 * CoffeeScript supports default settings for parameters
 
 		# JavaScript:
-		my_function = function(parameter) {
-		  console.log("This is my parameter: " + parameter)
+		myFunction = function(parameter) {
+		  console.log("This is my parameter: " + parameter);
 		}
 
 		# CoffeeScript:
-		my_function = (parameter) ->
+		myFunction = (parameter) ->
 		  console.log "This is my parameter: #{parameter}" # string interpolation!
 
 
@@ -99,23 +99,23 @@ By the end of this lesson you should be able to:
 		months = ["January", "February", "March"]
 
 		months = [
-			"January"
-			"February"
-			"March"
+		  "January"
+		  "February"
+		  "March"
 		]
 
 ## Ranges
 * very much like ruby ranges
 
-    	# inclusive range assignment
-    	range = [1..6] => [1,2,3,4,5,6]
+		# inclusive range assignment
+		range = [1..6] #=> [1, 2, 3, 4, 5, 6]
 
-    	# non-inclusive range assignment
-    	range = [1...6] => [1,2,3,4,5]
+		# non-inclusive range assignment
+		range = [1...6] #=> [1, 2, 3, 4, 5]
 
-    	# can get subsets of an array
-    	range[1..3] => [2,3,4]
-    	range[0..2] => [1,2,3]
+		# can get subsets of an array
+		range[1..3] #=> [2, 3, 4]
+		range[0..2] #=> [1, 2, 3]
 
 ## Conditionals
 
@@ -138,57 +138,16 @@ By the end of this lesson you should be able to:
 
 
 ## Operators:
-<h3>
 
-<table>
-  <thead>
-    <tr>
-      <th>Operation</th>
-      <th>JavaScript</th>
-      <th>CoffeeScript</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td> Equality</td>
-      <td> === </td>
-      <td> ==, is</td>
-    </tr>
-    <tr>
-      <td> Inequality</td>
-      <td> !== </td>
-      <td> !=, isnt </td>
-    </tr>
-    <tr>
-      <td> Logical Negative </td>
-      <td> ! </td>
-      <td> not </td>
-    </tr>
-    <tr>
-      <td> Logical AND </td>
-      <td> && </td>
-      <td> and </td>
-    </tr>
-    <tr>
-      <td> Logical OR </td>
-      <td> || </td>
-      <td> or </td>
-    </tr>
-    <tr>
-      <td> Logical True </td>
-      <td> true </td>
-      <td> true, yes, on </td>
-    </tr>
-    <tr>
-      <td> Logical False </td>
-      <td> false </td>
-      <td> false, no, off </td>
-    </tr>
-  </tbody>
-</table>
-
-</h3>
-
+| Operation        | JavaScript | CoffeeScript   |
+|------------------|------------|----------------|
+| Equality         | ===        | ==, is         |
+| Inequality       | !==        | !=, isnt       |
+| Logical Negative | !          | not            |
+| Logical AND      | &&         | and            |
+| Logical OR       | ||         | or             |
+| Logical True     | true       | true, yes, on  |
+| Logical False    | false      | false, no, off |
 
 ## Chained Comparison
 
@@ -200,7 +159,7 @@ By the end of this lesson you should be able to:
 
 ## List Comprehensions / Loops
 
-	months.forEach (month,index) ->
+	months.forEach (month, index) ->
 	  console.log "Month: #{month}"
 
 	for month in months
@@ -216,22 +175,22 @@ By the end of this lesson you should be able to:
 * Write a function that takes an array of numbers and prints to the console numbers divisible by 7
 * Use a range to create an array of numbers from 1 to 100
 * Loop through the array with a list comprehension use a filter to select the numbers divisible by 7
-* write the CoffeeScript. compile it. copy the compiled JavaScript into the console to run it.
+* Write the CoffeeScript. Compile it. Copy the compiled JavaScript into the console to run it.
 
 ## Objects, Existence: (15 min)
 
 ## Object
 
-	my_pet =
+	myPet =
 	  name: "Fluffy"
 	  species: "Cat"
 	  age: 3
 	  # name needs the @ symbol: @name === this.name
 	  voice: -> alert "Meow, my name is #{@name}"
 
-	console.log my_pet.name
-	console.log my_pet.species
-	my_pet.voice()
+	console.log myPet.name
+	console.log myPet.species
+	myPet.voice()
 
 ## Existence Operator: ?
 * tests for existence of a variable or object
@@ -267,10 +226,8 @@ By the end of this lesson you should be able to:
 ## Switch Statement
 * very much like Ruby shorthand
 
-		plate_umpire_call = switch number_outs
-			when 0 then "No outs, play ball."
-			when 1 then "One out, play ball."
-			when 2 then "Two outs, play ball."
-			else "The side is retired!"
-
-
+		plateUmpireCall = switch numberOuts
+		  when 0 then "No outs, play ball."
+		  when 1 then "One out, play ball."
+		  when 2 then "Two outs, play ball."
+		  else "The side is retired!"
